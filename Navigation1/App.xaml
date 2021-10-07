@@ -1,0 +1,11 @@
+﻿<Application x:Class="Navigation1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ViewModels="clr-namespace:Navigation1.ViewModels"
+             xmlns:Views="clr-namespace:Navigation1.Views">
+    <Application.Resources>
+        
+            
+       
+    </Application.Resources>
+</Application>

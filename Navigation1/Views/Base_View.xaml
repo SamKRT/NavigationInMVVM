@@ -1,0 +1,34 @@
+﻿<Window x:Class="Navigation1.Views.Base_View" x:Name="Base_V"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:ViewModels="clr-namespace:Navigation1.ViewModels"
+            xmlns:Views="clr-namespace:Navigation1.Views" 
+            Title="Base_View" Height="300" Width="300">
+    
+    
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type ViewModels:LogOn_ViewModel}">
+            <Views:LogOn_View />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type ViewModels:Recovery_ViewModel}">
+            <Views:RecoveryView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type ViewModels:Regester_ViewModel}">
+            <Views:Regester_View />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type ViewModels:Main_ViewModel}">
+            <Views:Main_View />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:TestViewModel}">
+            <Views:TestView/>
+        </DataTemplate>
+    </Window.Resources>
+
+
+    <ContentControl Grid.Row="0" Grid.Column="1" Content="{Binding EnityFw}" Margin="10" />
+    
+</Window>
